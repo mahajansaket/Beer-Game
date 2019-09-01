@@ -1,0 +1,16 @@
+﻿<Window x:Class="beergame.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="700" Width="1300">
+    <Grid>
+        <DataGrid Name="beergame" AutoGenerateColumns="False" IsReadOnly="False" Margin="10,10,10,10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding week}" Width="*" Header="Week"/>
+                <DataGridTextColumn Binding="{Binding r_cost}" Width="*" Header="Retailer Cost"/>
+                <DataGridTextColumn Binding="{Binding w_cost}" Width="*" Header="Wholesaler Cost"/>
+                <DataGridTextColumn Binding="{Binding d_cost}" Width="*" Header="Distributor Cost"/>
+                <DataGridTextColumn Binding="{Binding f_cost}" Width="*" Header="Factory Cost"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
